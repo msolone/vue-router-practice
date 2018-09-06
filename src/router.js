@@ -17,16 +17,18 @@ export default new Router({
     {
       path: "/about",
       name: "about",
+      // You dont need the import statement about if use this style
       component: () => import("./views/About.vue")
     },
     {
-      path: "/contact",
+      path: "/about/contact",
       name: "contact",
       component: () => import("./views/Contact.vue")
     },
     {
       path: "/media",
       name: "media",
+      // Requires an import statement above
       component: Media
     }
   ]
